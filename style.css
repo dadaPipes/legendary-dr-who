@@ -1,0 +1,237 @@
+/* #region header */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    background-image: url("images/dalek-6.jpg");
+    /* background-color: black; */
+}
+
+.header__home-nav {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.header__home-nav-link {
+    display: flex;
+    align-items: center;
+    height: 60px;
+}
+
+.header__home-nav-link-logo {
+    height: 100%;
+    width: 60px;
+    margin-right: 10px;
+    object-fit: contain ;
+}
+
+.header__home-nav-link-text {
+    margin: 0;
+    text-decoration: none;
+    color: #F9FAF8;
+}
+
+.header__main-nav {
+    display: flex;
+    justify-content: space-between;
+    list-style: none; /* Remove default list styles */
+}
+
+.header__main-nav ul {
+    display: flex;
+    list-style: none;
+}
+
+.header__main-nav li {
+    margin-left: 20px;  /* Add some spacing between the links */
+}
+
+.header__main-nav a {
+    text-decoration: none; /* Remove underline from links */
+}
+
+/* #endregion */
+
+/* #region hero section */
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    margin-top: 0;
+    margin-bottom: 5%;
+    padding: 5% 0;
+    padding-left: 10%;
+    padding-right: 10%;
+    background-color: #1F2937;
+}
+
+.hero__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+}
+
+.hero__content-main-text {
+    display: flex;
+    margin: 0;
+    font: 48px;
+    font-weight: 900;
+    color: #F9FAF8;
+}
+
+.hero__content-sub-text {
+    display: flex;
+    margin-right: 5%;
+    color: #E5E7EB;
+}
+
+.hero__content-sign-up-button {
+    background-color: #3882F6;
+    border-color: #F9FAF8;
+    border-style: solid;
+    border-radius: 8px;
+    height: 40px;
+    width: 100px;
+    color: #F9FAF8;
+    }
+
+.hero__img {
+    max-height: 300px;
+    height: 100%;
+    width: auto;
+    object-fit: contain;
+    margin-left: auto;
+}
+
+/* #endregion */
+
+/* #region info section */
+
+.info {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.info__main-text {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    color: #1F2937;
+}
+
+.info__content {
+    display: flex;
+    align-content: center;
+    margin: 0 20%;
+    background-color: white;
+}
+
+.info__content-figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    margin: 2%;
+  }
+
+.info__content-figure-img {
+  width: 120px;
+  height: 120px;
+  max-width: 100%;
+  max-height: 100%;
+  border: 5px solid #3882F6;
+  border-radius: 25px;
+  overflow: hidden;
+  margin: 5%;
+  object-fit: cover;
+}
+
+.info__content-figure-img.weeping-angel:hover {
+    content: url("./images/weeping-angel-scary.jpg");
+}
+
+.info__content-figure-figcaption {
+    display: flex;
+    margin: 5%;
+    color: #1F2937;
+}
+
+/* #endregion */
+
+/* #region quote section */
+
+.quote {
+    background-color: #E5E7EB;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+
+.quote__text {
+    font-size: 36px;
+    color: #1F2937;
+}
+
+.quote__signature {
+    font-weight: bold;
+    padding-bottom: 5%;
+    text-align: end;
+}
+
+/* #endregion */
+
+/* #region call to action section */
+
+.call-to-action {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5% 10%;
+    padding: 5% 10%;
+    border-radius: 8px;
+    background-color: #3882F6;
+}
+.call-to-action__text {
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.call-to-action__text-main {
+    margin-top: 0;
+    color: #F9FAF8;
+}
+
+.call-to-action__text-sub {
+    margin-bottom: 0;
+    color: #E5E7EB;
+}
+
+.call-to-action__sign-up-button {
+    border-radius: 8px;
+    height: 100px;
+    width: 200px;
+    margin-left: 5%;
+    border: 5px solid #F9FAF8;
+}
+
+.call-to-action__sign-up-button-img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain ;
+    background-color: #F9FAF8;
+}
+
+/* #endregion */
+
+/* #region footer */
