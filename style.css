@@ -4,11 +4,6 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.background {
-    background-image: url("images/universe-double.jpg");
-    background-size: cover;
-}
-
 /* #region header */
 
 .header {
@@ -101,29 +96,30 @@
     padding-left: 10%;
     padding-right: 10%;
     background-color: black;
-    /* background-color: #1F2937;*/
+    /*background-image: url("images/hero-bottom-transparent.png");*/
+    background-size: cover;
 }
 
-.hero__content {
+.hero__text {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     flex: 1;
 }
 
-.hero__content-main-text {
+.hero__main-text {
     margin: 0;
     font: 48px;
     font-weight: 900;
     color: #F9FAF8;
 }
 
-.hero__content-sub-text {
+.hero__sub-text {
     margin-right: 5%;
     color: #E5E7EB;
 }
 
-.hero__content-sign-up-button {
+.hero__sign-up-button {
     background-color: #0d44b2;
     border-color: #F9FAF8;
     border-style: solid;
@@ -143,21 +139,21 @@
     }
   }
 
-.hero__content-image-container {
+.hero__image {
     display: flex;
     flex: 1;
     height: 300px;
     position: relative;
 }
 
-.hero__content-image-container-image { 
+.hero__dalek { 
     height: 100%;
     width: auto;
     object-fit: contain;
     margin-left: auto;
 }
 
-.hero__content-image-container-dot {
+.hero__dot {
     position: absolute;
     top: 15.5%;
     right: 20.6%;
@@ -167,7 +163,7 @@
     animation: changeColor 5s linear infinite;
 }
 
-.hero__content-image-container-dot:before {
+.hero__dot:before {
     content: "";
     position: absolute;
     top: 0;
@@ -183,18 +179,22 @@
     transition: 2s;
 }
 
-.hero__content-image-container-dot:hover:before {
+.hero__dot:hover:before {
   transform: scale(1);
   transition: 0s;
 }
 
 /* #endregion */
 
+.universe-background {
+    background-image: url("images/universe-double.jpg");
+    background-size: cover;
+}
+
 /* #region info section */
 
 .info {
     padding: 5% 0;
-    /*background-image: url("images/background-66.jpg");*/
     background-size: cover;
 }
 
@@ -212,7 +212,7 @@
     margin: 0 20%;
 }
 
-.info__content-figure {
+.info__item {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -220,7 +220,7 @@
     margin: 2%;
   }
 
-.info__content-figure-img {
+.info__img {
   width: 120px;
   height: 120px;
   max-width: 100%;
@@ -232,11 +232,12 @@
   object-fit: cover;
 }
 
-.info__content-figure-img.weeping-angel:hover {
-    content: url("./images/weeping-angel-scary.jpg");
+.info__img.weeping-angel:hover {
+    content: url("./images/weeping-angel-scary.jpg"); /* TODO: make a series of images. each time a user hovers over, the angel gets closer. 
+                                                         end image = "game over" or something dr.who related */ 
 }
 
-.info__content-figure-figcaption {
+.info__figcaption {
     display: flex;
     margin: 5%;
     color: #F9FAF8;
@@ -247,10 +248,10 @@
 /* #region quote section */
 
 .quote {
-    /*background-color: #0d44b2;*/
     padding: 2% 0;
     padding-left: 20%;
     padding-right: 20%;
+    background-color: rgba(0, 0, 0, 0.5); /* Black with 50% opacity */
   }
 
 .quote__text {
@@ -261,7 +262,6 @@
 
 .quote__signature {
     font-weight: bold;
-    padding-bottom: 5%;
     text-align: end;
     color: #F9FAF8;
 }
@@ -274,9 +274,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 5% 10%;
     padding: 5% 10%;
-    background-position: bottom;
-    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.5); /* Black with 50% opacity */
+    border-radius: 12px;
 }
 
 .call-to-action__text {
@@ -284,12 +285,12 @@
     flex-direction: column;
 }
 
-.call-to-action__text-main {
+.call-to-action__main-text {
     margin-top: 0;
     color: #F9FAF8;
 }
 
-.call-to-action__text-sub {
+.call-to-action__sub-text {
     margin-bottom: 0;
     color: #E5E7EB;
 }
@@ -303,7 +304,7 @@
     border: 0;
 }
 
-.call-to-action__sign-up-button-img {
+.call-to-action__img {
     height: 100%;
     width: 100%;
     object-fit: contain;
