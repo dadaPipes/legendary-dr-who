@@ -1,3 +1,14 @@
+@import url('https://fonts.cdnfonts.com/css/doctor-who');
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.background {
+    background-image: url("images/universe-double.jpg");
+    background-size: cover;
+}
+
 /* #region header */
 
 .header {
@@ -183,7 +194,7 @@
 
 .info {
     padding: 5% 0;
-    background-image: url("images/background-66.jpg");
+    /*background-image: url("images/background-66.jpg");*/
     background-size: cover;
 }
 
@@ -236,7 +247,7 @@
 /* #region quote section */
 
 .quote {
-    background-color: #0d44b2;
+    /*background-color: #0d44b2;*/
     padding: 2% 0;
     padding-left: 20%;
     padding-right: 20%;
@@ -264,28 +275,23 @@
     justify-content: space-between;
     align-items: center;
     padding: 5% 10%;
-    background-image: url("images/background-66-flip.jpg");
     background-position: bottom;
     background-size: cover;
-    border: 1px solid red;
 }
 
 .call-to-action__text {
     justify-content: space-between;
     flex-direction: column;
-    border: 1px solid green;
 }
 
 .call-to-action__text-main {
     margin-top: 0;
     color: #F9FAF8;
-    border: 1px solid green;
 }
 
 .call-to-action__text-sub {
     margin-bottom: 0;
     color: #E5E7EB;
-    border: 1px solid green;
 }
 
 .call-to-action__sign-up-button {
