@@ -3,7 +3,7 @@
 .header {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
     padding-left: 10%;
     padding-right: 10%;
     padding-top: 1%;
@@ -13,24 +13,23 @@
 
 .header__home-nav {
     display: flex;
-    justify-content: space-between;
-    align-content: center;
 }
 
-.header__home-nav-link {
+.header__home-link {
     display: flex;
     align-items: center;
     height: 60px;
 }
 
-.header__home-nav-link-logo {
+.header__logo {
     height: 100%;
     width: 60px;
     margin-right: 10px;
     object-fit: contain ;
+    border-radius: 50%;
 }
 
-.header__home-nav-link-text {
+.header__logo-text {
     margin: 0;
     text-decoration: none;
     color: #F9FAF8;
@@ -38,21 +37,45 @@
 
 .header__main-nav {
     display: flex;
-    justify-content: space-between;
-    list-style: none; /* Remove default list styles */
-}
-
-.header__main-nav ul {
-    display: flex;
+    justify-content: center;
+    align-items: center;
     list-style: none;
 }
 
-.header__main-nav li {
-    margin-left: 20px;  /* Add some spacing between the links */
+.header__list {
+    display: flex;
+    margin: 0;
+    list-style: none;
 }
 
-.header__main-nav a {
-    text-decoration: none; /* Remove underline from links */
+.header__item {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    position: relative; /* Added position relative to create a positioning context for the tooltip */
+}
+
+.header__link {
+    flex-direction: column;
+    text-decoration: none;
+    color: #F9FAF8;
+}
+
+.header__tooltip {
+    visibility: hidden;
+    background-color: #0d44b2;
+    color: #fff;
+    padding: 8px;
+    border-radius: 4px;
+    transition: visibility 0.2s ease-in-out;
+    position: absolute;  /* Added position absolute to position the tooltip relative to the .header__item */
+    left: 0;
+    top: 100%; /* Positioned the tooltip below the .header__item */
+    margin-top: 8px; /* Added margin-top to create space between the .header__item and the tooltip */
+}
+
+.header__item:hover .header__tooltip {
+    visibility: visible;
 }
 
 /* #endregion */
