@@ -7,46 +7,50 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<header class="header">
-        <nav class="header__home-nav">
-            <a class="header__home-link" href="./index.html">
-                <img class="header__logo" src="./images/dalek-logo.jpg" alt="dalek-logo">
-                <p class="header__logo-text">Dalek Web Academy</p>
-            </a>
-        </nav>
+<body class="body">
 
+    <header class="header">
         <nav class="header__main-nav">
-            <ul class="header__list">      
+            <ul class="header__list">
+                <li class="header__item--push-left">
+                    <a class="header__home-link" href="./index.html">
+                        <img class="header__logo" src="./images/dalek-logo.jpg" alt="dalek-logo">
+                        <p class="header__logo-text">Dalek Web Academy</p>
+                    </a>        
+                </li>      
                 <li class="header__item">
-                    <a href="https://www.youtube.com/watch?v=_eorELNxxrU" class="header__link">Advanced Time Travel Course</a>
-                    <span class="header__tooltip">Next course yesterday, 8.30</span>
+                    <a class="header__link" href="https://www.youtube.com/watch?v=_eorELNxxrU">Advanced Time Travel Course</a>
+                    <span class="header__tooltip">Next course yesterday <br> 8.30 a.m.</span>
                 </li>
                 <li class="header__item">
-                    <a href="https://www.w3schools.com/html/default.asp" class="header__link">Sonic Toolbox</a>
+                    <a class="header__link" href="https://www.w3schools.com/html/default.asp">Sonic Toolbox</a>
                     <span class="header__tooltip">Awaken the Potential</span>
                 </li>
                 <li class="header__item">
-                    <a href="https://github.com/" class="header__link">Regeneration Hub</a>
+                    <a class="header__link" href="https://github.com/">Regeneration Hub</a>
                     <span class="header__tooltip">Reinvent your code with every regeneration</span>
                 </li>
                 <li class="header__item">
-                    <a href="https://en.wikipedia.org/wiki/History_of_the_Daleks" class="header__link">Dalek Chronicles</a>
+                    <a class="header__link" href="https://en.wikipedia.org/wiki/History_of_the_Daleks">Dalek Chronicles</a>
                     <span class="header__tooltip">About Us</span>
                 </li>
             </ul>
         </nav>
-</header>
-
-<body>
+    </header>
+    
     <section class="hero">
         <div class="hero__text">
             <h1 class="hero__main-text">EXPLAIN!!!</h1>
             <p class="hero__sub-text">Where Daleks learn to conquer the web. <br> Learn essential web development skills <br> in Dalek-friendly language</p>
-            <button class="hero__sign-up-button">Sign up</button>
+            <div class="hero__button-content">
+                <div class=""></div>
+                <img class="hero__peeking-dalek" src="./images/darlek-head-cut.png" alt="dalek peeking out from top of button">
+                <button class="hero__sign-up-button">Sign up now or..</button>
+            </div>
         </div>
-        <div class="hero__image">
+        <div class="hero__image-content">
             <img class="hero__dalek" src="./images/dalek-5.jpg" alt="darlek">
-            <span class="hero__dot"></span>
+            <div class="hero__glow"></div>
         </div>
     </section>
 
@@ -56,28 +60,29 @@
             <h2 class="info__main-text" style="font-family: 'Doctor Who', sans-serif;">Web Development for Intergalactic Beings</h2>
             <div class="info__content">
                 <figure class="info__item">
-                    <a href="">
-                        <img class="info__img" src="./images/sontarans.jpg" alt="sontarans">
+                    <a class="info__link" href="https://www.bbc.co.uk/programmes/profiles/DzfDnH0SHVmz8JfsWlwKbl/zygons" alt="zygon">
+                        <img class="info__img" src="./images/zygon.jpg" alt="zygon">
                     </a>
-                    <figcaption class="info__figcaption">Code with Sontarans tactical precision</figcaption>
+                    <figcaption class="info__img-text">Master the art of transformation</figcaption>
                 </figure>
                 <figure class="info__item">
-                    <a href="https://www.bbc.co.uk/programmes/profiles/39SG3PHm5csznV9jRC01Tp3/weeping-angels">
+                    <a class="info__link" href="https://www.bbc.co.uk/programmes/profiles/39SG3PHm5csznV9jRC01Tp3/weeping-angels">
                         <img class="info__img weeping-angel" src="./images/weeping-angel.jpg" alt="weeping-angel">
                     </a>
-                    <figcaption class="info__figcaption">Write code that stands the test of time</figcaption>
+                    <figcaption class="info__img-text">Write code that outlasts the ages</figcaption>
+                    <figcaption class="info__img-text-hover">DONT BLINK!</figcaption>
                 </figure>
                 <figure class="info__item">
-                    <a href="https://www.bbc.co.uk/programmes/profiles/56yLC4MqySz7xl62cTQpS14/cybermen">
+                    <a class="info__link" href="https://www.bbc.co.uk/programmes/profiles/56yLC4MqySz7xl62cTQpS14/cybermen">
                         <img class="info__img" src="./images/cypermen.jpg" alt="cypermen">
                     </a>  
-                    <figcaption class="info__figcaption">Upgrade your coding skills, starting today</p>
+                    <figcaption class="info__img-text">Upgrade your coding skills, starting today</p>
                 </figure>
                 <figure class="info__item">
-                    <a href="https://www.bbc.co.uk/programmes/profiles/zF3JzbmFY8cq3XwYRzSwdD/odin">
+                    <a class="info__link" href="https://www.bbc.co.uk/programmes/profiles/zF3JzbmFY8cq3XwYRzSwdD/odin">
                         <img class="info__img" src="./images/odin.jpg" alt="odin">
                     </a>
-                    <figcaption class="info__figcaption">Craft code with the wisdom of Odin</p>
+                    <figcaption class="info__img-text">Craft code with timeless wisdom</p>
                 </figure>
             </div>
         </section>
@@ -97,12 +102,12 @@
                         Time is up – for your coding adventure. <br>
                         Just like the Tardis, our courses are bigger on the inside, <br>
                         packed with knowledge and possibilities waiting to be explored. <br>
-                        Sign up for our exclusive web development courses <br>
-                        by clicking the TARDIS<br>
+                        Sign up for our exclusive web development courses. <br><br>
+                        -Hit that subscribe TARDIS<br>
                     </p>
                 </div>
                 <button class="call-to-action__sign-up-button">
-                    <img class="call-to-action__img" src="./images/tardis-edit.jpg" alt="tardis">
+                    <img class="call-to-action__img" src="./images/tardis-button.png" alt="tardis subscribe button">
                 </button>
         </section>
 
