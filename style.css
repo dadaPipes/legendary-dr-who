@@ -27,9 +27,9 @@
 }
 
 .header__logo {
-    height: 60px;
-    width: 60px;
-    margin-right: 10px;
+    height: 4rem;
+    width: 4rem;
+    margin-right: 1rem;
     object-fit: contain ;
     border-radius: 50%; /* make logo round */
 }
@@ -43,8 +43,8 @@
 .header__item {
     display: flex;
     align-items: center;
-    position: relative;  /* Create a positioning context for the tooltip*/
-    margin-left: 20px;
+    /*position: relative;   Create a positioning context for the tooltip*/
+    margin-left: 2rem;
 }
 
 .header__item--push-left {
@@ -56,21 +56,29 @@
 }
 
 .header__link {
+    position: relative;
+    display: inline-block;
     text-decoration: none;
     color: #F9FAF8;
 }
 
-.header__tooltip {
-    visibility: hidden;
-    position: absolute;  /* Position tooltip relative to .header__item */
-    top: 100%; /* Position tooltip below .header__item */
-    left: 0;
-    margin-top: 2%;
-    padding: 6px;
-    border-radius: 4px;
-    transition: visibility 0.2s ease-in-out;
+.header__link:hover:after { /* styles the tooltip when you hover over the link */
+    content: attr(data-tooltip); /* sets the content of the tooltip to the value of the data-tooltip attribute in the HTML */
+    visibility: visible;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0.5em;
+    border-radius: 0.4rem;
     background-color: #0d44b2;
     color: #fff;
+    white-space: nowrap; /* prevents the text in the tooltip from wrapping to the next line */
+    z-index: 1; /* appears above other elements */
+}
+.header__link:after {
+    content: '';
+    visibility: hidden;
 }
 
 .header__item:hover .header__tooltip {
@@ -84,7 +92,6 @@
 .hero {
     display: flex;
     justify-content: space-between;
-    align-items: stretch;
     padding: 5% 10%;
     background-color: black;
     /*background-image: url("images/hero-bottom-transparent.png");*/
@@ -106,12 +113,12 @@
 }
 
 .hero__sub-text {
-    margin-right: 5%;
     margin-bottom: auto;
     color: #E5E7EB;
 }
 
 .hero__button-content {
+    display: flex;
     position: relative; /* create a positioned ancestor for the child element. Child element will be positioned relative to its parent element*/
     width: 100px;
 }
@@ -151,14 +158,14 @@
 
 .hero__image-content {
     display: flex;
-    flex: 1;
+    margin-left: 5%;
     height: 300px;
     position: relative;
 }
 
-.hero__dalek { 
-    height: 100%;
-    width: auto;
+.hero__dalek {
+    height: auto;
+    max-width: 100%;
     object-fit: contain;
     margin-left: auto;
 }
@@ -217,17 +224,16 @@
     color: #F9FAF8;
 }
 
-.info__content {
+.info__collection {
     display: flex;
-    align-content: center;
+    justify-content: space-between;
     margin: 0 20%;
 }
 
-.info__item {
+.info__card {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    flex: 1;
+    align-content: center;
     margin: 2%;
   }
 
@@ -241,6 +247,10 @@
   overflow: hidden;
   margin: 5%;
   object-fit: cover;
+}
+
+.info__img-text {
+    text-wrap: balance;
 }
 
 /* TODO 
